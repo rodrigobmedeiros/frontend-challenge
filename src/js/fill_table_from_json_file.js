@@ -21,3 +21,9 @@ for (let site of sites) {
     </tr>
     `;
 }
+
+// Add click event to tr elements
+$('#table tbody tr').click(function() {
+    $(this).addClass('bg-success').siblings().removeClass('bg-success');
+    console.log('teste');
+});
